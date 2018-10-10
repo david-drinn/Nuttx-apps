@@ -37,7 +37,6 @@
 
 APPNAME = program_loader
 PRIORITY = SCHED_PRIORITY_DEFAULT
-STACKSIZE = 8192
 
 ASRCS = __libc_start_main.S
 CSRCS = 

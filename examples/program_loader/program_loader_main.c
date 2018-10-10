@@ -343,7 +343,7 @@ int program_loader_main(int argc, FAR char *argv[])
                         main_addr);
 
                 pcb_ptr->pid = nxtask_create(cargv[0], SCHED_PRIORITY_DEFAULT + 10,
-                                             0x400000,
+                                             STACKSIZE,
                                              (main_t)(pcb_ptr->base_address + (uint64_t)main_addr - LINUX_ELF_OFFSET),
                                              cargv + 1);
 

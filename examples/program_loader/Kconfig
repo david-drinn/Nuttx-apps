@@ -14,8 +14,8 @@ if EXAMPLES_PROGRAM_LOADER
 
 config EXAMPLES_PROGRAM_LOADED_STACKSIZE
 	int "Program stack size"
-	default 8192
+	default 0x400000
 	---help---
-		Size of the stack used to create the ostest task.  Default is 8192.
+		Size of the stack used to create the ostest task.  Default is 4MiB.
 
 endif # EXAMPLES_OSTEST
